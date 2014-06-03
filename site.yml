@@ -1,0 +1,6 @@
+- name: common configuration to all node
+  hosts: ec2
+  user: ec2-user
+
+  roles:
+    - common
