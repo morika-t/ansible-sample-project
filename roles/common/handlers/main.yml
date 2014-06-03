@@ -1,0 +1,4 @@
+- name: update timezone
+  command: source /etc/sysconfig/clock
+  sudo: yes
+
