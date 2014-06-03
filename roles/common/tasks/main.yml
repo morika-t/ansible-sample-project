@@ -1,0 +1,8 @@
+- name: Set time zone
+  template: src=clock.j2 dest=/etc/sysconfig/clock
+  sudo: yes
+
+- name: Resize filesystem size
+  command: resize2fs /dev/sda1
+  sudo: yes
+ 
