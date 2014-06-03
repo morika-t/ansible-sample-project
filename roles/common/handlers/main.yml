@@ -1,4 +1,5 @@
 - name: update timezone
   command: source /etc/sysconfig/clock
+  command: sudo ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
   sudo: yes
 
