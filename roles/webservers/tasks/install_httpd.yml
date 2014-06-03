@@ -1,5 +1,5 @@
 - name: ensure apache is installed
-  yum: pkg=httpd,httpd-devel state=installed
+  yum: pkg=httpd state=installed
 
 - name: httpd service status
   service: name=httpd state=started enabled=yes
