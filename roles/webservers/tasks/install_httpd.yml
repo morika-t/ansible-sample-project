@@ -5,5 +5,5 @@
   service: name=httpd state=started enabled=yes
 
 - name: update vhosts config
-  tepmlate: src=vhosts.conf.j2 dest=/etc/httpd/conf.d/vhosts.conf
+  template: src=vhosts.conf.j2 dest=/etc/httpd/conf.d/vhosts.conf
   notify: restart httpd

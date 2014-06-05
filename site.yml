@@ -4,3 +4,10 @@
 
   roles:
     - common
+
+- name: webserver configuration to Role web
+  hosts: tag_Role_web
+  user: ec2-user
+
+  roles:
+    - webservers
